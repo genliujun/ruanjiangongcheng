@@ -6,7 +6,7 @@ import pymysql
 # 连接数据库
 con = pymysql.Connect(host='localhost',port=3306,user='root',password='123456')
 cur = con.cursor()
-con.select_db("ysc")
+con.select_db("shujuku")
 cur.execute("select * from students;")
 students = cur.fetchall()
 
